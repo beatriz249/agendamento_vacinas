@@ -12,4 +12,5 @@ mongoose.connect('mongodb://localhost:27017/agendamento', { useNewUrlParser: tru
 requireDir('./src/models');
 
 app.use('/agendamento/', require('./src/routes/routes'));
+
 app.listen(3000);
